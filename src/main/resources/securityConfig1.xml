@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:beans xmlns="http://www.springframework.org/schema/security"
+         xmlns:b="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+    <!--
+        现在先大概过一遍整个流程，用户登陆，会被AuthenticationProcessingFilter拦截，调用AuthenticationManager的实现，
+        而且AuthenticationManager会调用ProviderManager来获取用户验证信息
+        （不同的Provider调用的服务不同，因为这些信息可以是在数据库上，可以是在LDAP服务器上，可以是xml配置文件上等），
+        如果验证通过后会将用户的权限信息封装一个User放到spring的全局缓存SecurityContextHolder中，以备后面访问资源时使用。
+    -->
+    <!--
+        访问资源（即授权管理），访问url时，会通过AbstractSecurityInterceptor拦截器拦截，
+        其中会调用FilterInvocationSecurityMetadataSource的方法来获取被拦截url所需的全部权限，在调用授权管理器AccessDecisionManager，
+        这个授权管理器会通过spring的全局缓存SecurityContextHolder获取用户的权限信息，还会获取被拦截的url和被拦截url所需的全部权限，
+        然后根据所配的策略（有：一票决定，一票否定，少数服从多数等），如果权限足够，则返回，权限不够则报错并调用权限不足页面。
+    -->
+
+    <!--登录页面不过滤 -->
+    <http pattern="/login.jsp" security="none"/>
+    <http access-denied-page="/accessDenied.jsp">
+        <form-login login-page="/login.jsp"/>
+        <!--访问/admin.jsp资源的用户必须具有ROLE_ADMIN的权限 -->
+        <!--Spring的配置文件也支持过滤掉不需要权限判断的url（配置http/intercept-url元素）-->
+        <!-- <intercept-url pattern="/admin.jsp" access="ROLE_ADMIN" /> -->
+        <!--访问/**资源的用户必须具有ROLE_USER的权限 -->
+        <!-- <intercept-url pattern="/**" access="ROLE_USER" /> -->
+        <session-management>
+            <concurrency-control max-sessions="1"
+                                 error-if-maximum-exceeded="false"/>
+        </session-management>
+        <!--增加一个filter，这点与 Acegi是不一样的，不能修改默认的filter了， 这个filter位于FILTER_SECURITY_INTERCEPTOR之前 -->
+        <custom-filter ref="myFilter" before="FILTER_SECURITY_INTERCEPTOR"/>
+    </http>
+    <!--一个自定义的filter，必须包含 authenticationManager,accessDecisionManager,securityMetadataSource三个属性，
+        我们的所有控制将在这三个类中实现，解释详见具体配置 -->
+    <!--
+        第一个是authenticationManager，这个是处理验证的，
+        这里需要特别说明的是：这个类不单只这个拦截器用到，还有验证拦截器AuthenticationProcessingFilter也用到了，
+        而且实际上的登陆验证也是AuthenticationProcessingFilter拦截器调用authenticationManager来处理的，
+        我们这个拦截器只是为了拿到验证用户信息而已（这里不太清楚，因为authenticationManager笔者设了断点，用户登陆后再也没调用这个类了，
+        而且调用这个类时不是笔者自己写的那个拦截器调用的，看了spring技术内幕这本书才知道是AuthenticationProcessingFilter拦截器调用的）
+    -->
+    <!--
+        securityMetadataSource这个用来加载资源与权限的全部对应关系的，并提供一个通过资源获取所有权限的方法。
+    -->
+    <b:bean id="myFilter"
+            class="main.java.com.fish.spring.security.MyFilterSecurityInterceptor">
+        <b:property name="authenticationManager" ref="authenticationManager"/>
+        <b:property name="accessDecisionManager" ref="myAccessDecisionManagerBean"/>
+        <b:property name="securityMetadataSource" ref="securityMetadataSource"/>
+    </b:bean>
+    <!--
+    SpringSecurity3的核心类有三种
+    1.URL过滤器或方法拦截器：用来拦截URL或者方法资源对其进行验证，其抽象基类为AbstractSecurityInterceptor
+    2.资源权限获取器：用来取得访问某个URL或者方法所需要的权限，接口为SecurityMetadataSource
+    3.访问决策器：用来决定用户是否拥有访问权限的关键类，其接口为AccessDecisionManager。
+    调用顺序为：AbstractSecurityInterceptor调用SecurityMetadataSource取得资源的所有可访问权限，然后再调用AccessDecisionManager来实现决策，确定用户是否有权限访问该资源。
+    SecurityMetadataSource包括MethodSecurityMetadataSource和FilterInvocationSecurityMetadataSource，分别对应方法和URL资源。
+    -->
+    <!--验证配置，认证管理器，实现用户认证的入口，主要实现UserDetailsService接口即可 -->
+    <authentication-manager alias="authenticationManager">
+        <authentication-provider user-service-ref="myUserDetailService">
+            <!--如果用户的密码采用加密的话 <password-encoder hash="md5" /> -->
+        </authentication-provider>
+    </authentication-manager>
+    <!--在这个类中，你就可以从数据库中读入用户的密码，角色信息，是否锁定，账号是否过期等 -->
+    <b:bean id="myUserDetailService" class="main.java.com.fish.spring.security.MyUserDetailService"/>
+    <!--访问决策器，决定某个用户具有的角色，是否有足够的权限去访问某个资源 -->
+    <b:bean id="myAccessDecisionManagerBean"
+            class="main.java.com.fish.spring.security.MyAccessDecisionManager">
+    </b:bean>
+    <!--资源源数据定义，将所有的资源和权限对应关系建立起来，即定义某一资源可以被哪些角色访问 -->
+    <b:bean id="securityMetadataSource"
+            class="main.java.com.fish.spring.security.MyInvocationSecurityMetadataSource"/>
+
+</b:beans>

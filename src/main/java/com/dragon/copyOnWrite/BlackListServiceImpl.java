@@ -1,0 +1,32 @@
+package com.dragon.copyOnWrite;
+
+import java.util.Map;
+
+/**
+ * 黑名单服务
+ *
+ * @author huangzhibo
+ * @date 12/06/2017
+ */
+public class BlackListServiceImpl {
+
+    /**
+     * 1. 减少扩容开销。根据实际需要，初始化CopyOnWriteMap的大小，避免写时CopyOnWriteMap扩容的开销。
+     * 2. 使用批量添加。因为每次添加，容器每次都会进行复制，所以减少添加次数，可以减少容器的复制次数。
+     */
+
+    private static CopyOnWriteMap<String, Boolean> blackListMap =
+            new CopyOnWriteMap<String, Boolean>(1000);
+
+    public static boolean isBlackList(String id) {
+        return blackListMap.get(id) != null;
+    }
+
+    public static void addBlackList(String id) {
+        blackListMap.put(id, Boolean.TRUE);
+    }
+
+    public static void addBlackList(Map<String, Boolean> ids) {
+        blackListMap.putAll(ids);
+    }
+}

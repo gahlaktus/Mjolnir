@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxIdle" value="${redis.maxIdle}"/>
+        <property name="maxTotal" value="${redis.maxActive}"/>
+        <property name="maxWaitMillis" value="${redis.maxWait}"/>
+        <property name="testOnBorrow" value="${redis.testOnBorrow}"/>
+    </bean>
+
+    <bean id="connectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
+          p:host-name="${redis.host}" p:port="${redis.port}" p:password="${redis.pass}"
+          p:pool-config-ref="poolConfig"/>
+    <bean id="stringSerializer" class="org.springframework.data.redis.serializer.StringRedisSerializer"/>
+    <!-- 开启事务，可以通过transcational注解控制 -->
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
+        <property name="connectionFactory" ref="connectionFactory"/>
+        <property name="keySerializer" ref="stringSerializer"/>
+        <property name="enableTransactionSupport" value="true"/>
+    </bean>
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- this is the service object that we want to make transactional -->
+    <bean id="fooService" class="com.spring.transaction.service.DefaultFooService"/>
+
+    <!-- the transactional advice (what 'happens'; see the <aop:advisor/> bean below) -->
+    <tx:advice id="txAdvice" transaction-manager="txManager"> <!-- the transactional semantics... -->
+        <tx:attributes> <!-- all methods starting with 'get' are read-only -->
+            <tx:method name="get*"
+                       read-only="true"/> <!-- other methods use the default transaction settings (see below) -->
+            <tx:method name="*"/>
+        </tx:attributes>
+    </tx:advice>
+    <!-- ensure that the above transactional advice runs for any execution of an operation defined by the FooService interface -->
+    <aop:config>
+        <aop:pointcut id="fooServiceOperation" expression="execution(* com.spring.transaction.service.FooService.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="fooServiceOperation"/>
+    </aop:config>
+
+    <!--重试机制样例-->
+    <bean id="taskRetryAdvice" class="org.springframework.retry.interceptor.RetryOperationsInterceptor">
+        <property name="retryOperations" ref="taskRetryTemplate" />
+    </bean>
+    <bean id="taskRetryTemplate" class="org.springframework.retry.support.RetryTemplate">
+        <property name="retryPolicy" ref="taskRetryPolicy" />
+        <property name="backOffPolicy" ref="exponentialBackOffPolicy" />
+    </bean>
+    <bean id="taskRetryPolicy" class="org.springframework.retry.policy.SimpleRetryPolicy">
+        <constructor-arg index="0" value="3" />
+        <constructor-arg index="1">
+            <map>
+                <entry key="org.springframework.dao.DeadlockLoserDataAccessException" value="true" />
+            </map>
+        </constructor-arg>
+    </bean>
+    <bean id="exponentialBackOffPolicy" class="org.springframework.retry.backoff.ExponentialBackOffPolicy">
+        <property name="initialInterval" value="300" />
+        <property name="maxInterval" value="30000" />
+        <property name="multiplier" value="2.0" />
+    </bean>
+</beans>

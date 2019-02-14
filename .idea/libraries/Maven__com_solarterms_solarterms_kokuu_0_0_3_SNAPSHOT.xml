@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.solarterms:solarterms-kokuu:0.0.3-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/solarterms/solarterms-kokuu/0.0.3-SNAPSHOT/solarterms-kokuu-0.0.3-SNAPSHOT.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/solarterms/solarterms-kokuu/0.0.3-SNAPSHOT/solarterms-kokuu-0.0.3-20181120.055333-16.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/solarterms/solarterms-kokuu/0.0.3-SNAPSHOT/solarterms-kokuu-0.0.3-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/solarterms/solarterms-kokuu/0.0.3-SNAPSHOT/solarterms-kokuu-0.0.3-20181120.055333-16-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/solarterms/solarterms-kokuu/0.0.3-SNAPSHOT/solarterms-kokuu-0.0.3-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/solarterms/solarterms-kokuu/0.0.3-SNAPSHOT/solarterms-kokuu-0.0.3-20181120.055333-16-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

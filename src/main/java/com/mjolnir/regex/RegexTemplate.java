@@ -24,6 +24,8 @@ public class RegexTemplate {
 
     private static final Pattern ALPHABET_AND_NUMBER_PATTERN = Pattern.compile("^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z_]{8,16}$");
 
+    private static final Pattern NUMBER_ARRANGE = Pattern.compile("^([5-9]\\d{2}|[1-9]\\d{3,5})$");
+
     public static void main(String[] args) {
 
 //        String testStr = "aaaaaaaaaa";
@@ -38,7 +40,16 @@ public class RegexTemplate {
 //        }
 
         String t = "建设银行";
-        replaceChinese(t);
+        // replaceChinese(t);
+
+
+        String testNumber = "999999";
+
+        if (NUMBER_ARRANGE.matcher(testNumber).matches()){
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
 
     }
     private static final String CHINESE_REGEX = "[^\\u4E00-\\u9FA5]";

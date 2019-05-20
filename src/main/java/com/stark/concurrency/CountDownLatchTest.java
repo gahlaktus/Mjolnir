@@ -1,5 +1,6 @@
 package com.stark.concurrency;
 
+import java.text.DecimalFormat;
 import java.util.Calendar;
 import java.util.concurrent.CountDownLatch;
 
@@ -10,6 +11,8 @@ import java.util.concurrent.CountDownLatch;
 public class CountDownLatchTest {
 
     static CountDownLatch c = new CountDownLatch(2);
+
+    private static final DecimalFormat decimalFormat = new DecimalFormat("00");
 
     public static void main(String[] args) throws InterruptedException{
 
@@ -30,6 +33,8 @@ public class CountDownLatchTest {
         calendar.add(Calendar.DAY_OF_MONTH, -1);
 
         String str = String.valueOf(calendar.get(Calendar.DATE));
+
+        System.out.println(decimalFormat.format(calendar.get(Calendar.DATE)));
 
         System.out.println(str);
 

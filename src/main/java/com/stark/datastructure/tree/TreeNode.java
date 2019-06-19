@@ -1,4 +1,4 @@
-package com.achilles.LeetCode.src.LeetCode.tree;
+package com.stark.datastructure.tree;
 
 public class TreeNode {
 	int val;

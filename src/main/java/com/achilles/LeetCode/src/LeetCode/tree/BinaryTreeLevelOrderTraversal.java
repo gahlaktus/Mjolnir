@@ -1,4 +1,6 @@
-package LeetCode.tree;
+package com.achilles.LeetCode.src.LeetCode.tree;
+
+import com.achilles.LeetCode.src.LeetCode.tree.TreeNode;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -43,9 +45,9 @@ public class BinaryTreeLevelOrderTraversal {
 			int levelNum = queue.size();
 			List<Integer> subList = new LinkedList<Integer>();
 			for (int i = 0; i < levelNum; i++) {
-				if(queue.peek().left != null) queue.offer(queue.peek().left);		//peek() »ñÈ¡µ«²»ÒÆ³ý´Ë¶ÓÁÐµÄÍ·£»Èç¹û´Ë¶ÓÁÐÎª¿Õ£¬Ôò·µ»Ø null¡£
+				if(queue.peek().left != null) queue.offer(queue.peek().left);		//peek() ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Æ³ï¿½ï¿½Ë¶ï¿½ï¿½Ðµï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ò·µ»ï¿½ nullï¿½ï¿½
 				if(queue.peek().right != null) queue.offer(queue.peek().right);
-				subList.add(queue.poll().val);		//poll() »ñÈ¡²¢ÒÆ³ý´Ë¶ÓÁÐµÄÍ·£¬Èç¹û´Ë¶ÓÁÐÎª¿Õ£¬Ôò·µ»Ø null¡£
+				subList.add(queue.poll().val);		//poll() ï¿½ï¿½È¡ï¿½ï¿½ï¿½Æ³ï¿½ï¿½Ë¶ï¿½ï¿½Ðµï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ò·µ»ï¿½ nullï¿½ï¿½
 			}
 			wrapList.add(0,subList);
 		}

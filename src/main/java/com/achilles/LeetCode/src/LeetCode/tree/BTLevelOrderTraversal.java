@@ -1,4 +1,6 @@
-package LeetCode.tree;
+package com.achilles.LeetCode.src.LeetCode.tree;
+
+import com.achilles.LeetCode.src.LeetCode.tree.TreeNode;
 
 import java.util.LinkedList;
 import java.util.List;

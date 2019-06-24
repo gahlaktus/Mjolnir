@@ -2,69 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2c430d4-b9d6-4ade-b8a4-8a54323b44ef" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stark/beautifulconcur/TestSleep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stark/utils/DataStreamUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stark/utils/ReadTxtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stark/utils/bankIdDic0621.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/.idea/copyright/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/.idea/sbt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/LeetCode.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/bin/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/bin/prepare/AtomicListInsert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/bin/prepare/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/bin/prepare/PriorityQueueDemo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/bin/prepare/PriorityQueueDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/AddTwoNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/AddTwoNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/FindMedianSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/FindMedianSortedArrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/LengthOfLongestSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/LengthOfLongestSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/array/BestTime2BuyAndSellStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/array/BestTime2BuyAndSellStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/array/BestTime2BuyAndSellStockII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/array/BestTime2BuyAndSellStockII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/array/BestTime2BuyAndSellStockIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/array/BestTime2BuyAndSellStockIII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/array/CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/array/CombinationSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/array/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/array/TwoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/array/_3Sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/array/_3Sum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/array/_3SumClosest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/array/_3SumClosest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/array/_4Sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/array/_4Sum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/heap/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/heap/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/heap/MergekSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/heap/MergekSortedLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/sort/ValidAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/sort/ValidAnagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/string/LongestPalindromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/string/LongestPalindromicSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/string/ReverseInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/string/ReverseInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/string/StringToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/string/StringToInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/string/ZigZagConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/string/ZigZagConversion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/tree/BSTIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/BSTIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/tree/BTInorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/BTInorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/tree/BTLevelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/BTLevelOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/tree/BTMaximumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/BTMaximumPathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/tree/BTPostorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/BTPostorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/tree/BTPreorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/BTPreorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/tree/BalanceBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/BalanceBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/tree/BinaryTreeLevelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/BinaryTreeLevelOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/tree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/prepare/AtomicListInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/prepare/AtomicListInsert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/prepare/PriorityQueueDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/prepare/PriorityQueueDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stark/concurrency/Ip2Number.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stark/Ip2Number.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stark/concurrency/TestWaitFun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stark/concurrency/TestWaitFun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/tree/BSTIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/tree/BTInorderTraversal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/tree/BTLevelOrderTraversal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/tree/BTMaximumPathSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/tree/BTPostorderTraversal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/tree/BTPreorderTraversal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/tree/BalanceBinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/tree/BinaryTreeLevelOrderTraversal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/tree/TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mjolnir/interview/lintcode/BinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mjolnir/interview/lintcode/FlattenBinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mjolnir/interview/lintcode/TraversalBinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stark/concurrency/Ip2Number.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stark/concurrency/TestWaitFun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stark/beautifulconcur/TestWaitFun.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/stark/concurrency/TestWaitFun.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -77,30 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BTPreorderTraversal.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/BTPreorderTraversal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="35" selection-start-column="35" selection-end-column="35" />
-              <folding>
-                <element signature="e#1213#1222#0" expanded="true" />
-                <element signature="e#1274#1284#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TreeNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/TreeNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,7 +33,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>[</find>
       <find>SuperClass</find>
       <find>head</find>
       <find>easefin.</find>
@@ -143,6 +62,7 @@
       <find>table</find>
       <find>join(</find>
       <find>notify</find>
+      <find>陕西</find>
     </findStrings>
     <replaceStrings>
       <replace>}</replace>
@@ -159,10 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/dawanglu/jvmdemo/OOMDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dawanglu/exception/TestException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dawanglu/collections/TestFailFastDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dawanglu/SerializableTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dawanglu/datastructure/SinglyList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dawanglu/datastructure/SinglyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stark/concurrency/JoinCountDownLatchTest.java" />
@@ -199,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/stark/concurrency/Ip2Number.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stark/datastructure/tree/TreeOptions.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stark/Ip2Number.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/stark/concurrency/TestWaitFun.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/tree/BSTIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/achilles/LeetCode/src/LeetCode/tree/BTPostorderTraversal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/src/LeetCode/tree/BTPostorderTraversal.java" />
@@ -210,6 +125,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/BTMaximumPathSum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/BTPostorderTraversal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/BTPreorderTraversal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stark/concurrency/TestWaitFun.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stark/beautifulconcur/TestWaitFun.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stark/beautifulconcur/TestSleep.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stark/utils/DataStreamUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stark/utils/ReadTxtUtils.java" />
       </list>
     </option>
   </component>
@@ -250,9 +170,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="817" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -261,7 +182,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,7 +222,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="achilles" type="462c0819:PsiDirectoryNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mjolnir" type="b2602c69:ProjectViewProjectNode" />
@@ -311,25 +231,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="achilles" type="462c0819:PsiDirectoryNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mjolnir" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mjolnir" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="achilles" type="462c0819:PsiDirectoryNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,6 +256,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/stark/utils" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/test" />
       <recent name="$PROJECT_DIR$/src/main/java/com/achilles" />
@@ -363,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestWaitFun">
+  <component name="RunManager" selected="Application.ReadTxtUtils">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -374,6 +285,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.stark.datastructure.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="ReadTxtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.stark.utils.ReadTxtUtils" />
+      <module name="Mjolnir" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.stark.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -389,35 +311,24 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="SubList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.stark.utils.SubList" />
+    <configuration name="TestSleep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.stark.beautifulconcur.TestSleep" />
       <module name="Mjolnir" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.stark.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="TestJson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.stark.json.TestJson" />
-      <module name="Mjolnir" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.stark.json.*" />
+          <option name="PATTERN" value="com.stark.beautifulconcur.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration name="TestWaitFun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.stark.concurrency.TestWaitFun" />
+      <option name="MAIN_CLASS_NAME" value="com.stark.beautifulconcur.TestWaitFun" />
       <module name="Mjolnir" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.stark.concurrency.*" />
+          <option name="PATTERN" value="com.stark.beautifulconcur.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -498,19 +409,19 @@
     <list>
       <item itemvalue="Maven.mjolnir [compile]" />
       <item itemvalue="Spring Boot.MjolnirApplication" />
-      <item itemvalue="Application.SubList" />
-      <item itemvalue="Application.TestJson" />
       <item itemvalue="Application.StringDemo" />
       <item itemvalue="Application.Ip2Number" />
       <item itemvalue="Application.TestWaitFun" />
+      <item itemvalue="Application.TestSleep" />
+      <item itemvalue="Application.ReadTxtUtils" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReadTxtUtils" />
+        <item itemvalue="Application.TestSleep" />
         <item itemvalue="Application.TestWaitFun" />
         <item itemvalue="Application.Ip2Number" />
         <item itemvalue="Application.StringDemo" />
-        <item itemvalue="Application.TestJson" />
-        <item itemvalue="Application.SubList" />
       </list>
     </recent_temporary>
   </component>
@@ -741,16 +652,16 @@
       <workItem from="1560306620591" duration="911000" />
       <workItem from="1560849383392" duration="1070000" />
       <workItem from="1560871762015" duration="1732000" />
-      <workItem from="1560913430923" duration="3577000" />
+      <workItem from="1560913430923" duration="5788000" />
+      <workItem from="1561096080863" duration="5023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="447969000" />
+    <option name="totallyTimeSpent" value="455203000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="817" extended-state="0" />
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -771,13 +682,14 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="16" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37569833" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6533333" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Spring" order="15" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.25274727" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2521212" />
       <window_info anchor="bottom" id="Run with VisualVM" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39127326" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24034335" />
       <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.51878786" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="11" />
@@ -786,7 +698,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.5223464" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -848,34 +759,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stark/concurrency/Notifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dragon/collection/queue/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stark/concurrency/ProducerConsumerInJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="66" column="34" lean-forward="true" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stark/concurrency/Profiler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
@@ -1043,9 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1074,9 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-          <folding>
-            <element signature="e#901#911#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1112,9 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-          <folding>
-            <element signature="e#2739#2749#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1146,13 +1020,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stark/concurrency/TestWaitFun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-213">
@@ -1171,9 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1181,9 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="e#851#861#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1196,19 +1057,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="35" />
+        <state relative-caret-position="187">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/achilles/leetcode/tree/BTPreorderTraversal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        <state relative-caret-position="298">
+          <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stark/beautifulconcur/TestWaitFun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stark/beautifulconcur/TestSleep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding>
-            <element signature="e#1213#1222#0" expanded="true" />
-            <element signature="e#1274#1284#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stark/utils/sql0621.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="211" column="56" lean-forward="true" selection-start-line="211" selection-start-column="56" selection-end-line="211" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stark/utils/ReadTxtUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="78" column="31" lean-forward="true" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stark/utils/DataStreamUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>

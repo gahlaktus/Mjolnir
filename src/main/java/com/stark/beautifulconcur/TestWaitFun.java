@@ -1,4 +1,4 @@
-package com.stark.concurrency;
+package com.stark.beautifulconcur;
 
 /**
  * @author huangzhibo
@@ -14,18 +14,19 @@ public class TestWaitFun {
         Thread tA = new Thread(() -> {
             try {
                 // 获取resourceA共享资源的监视器锁
-                synchronized(resourceA){
+                synchronized (resourceA) {
                     System.out.println("tA get resourceA lock");
-                }
-                // 获取resourceB共享资源的监视器锁
-                synchronized (resourceB){
-                    System.out.println("tA get resourceB lock");
 
-                    // 线程A阻塞 ，并择放获取到的 resourceA的锁
-                    System.out.println("tA release resourceA lock");
-                    resourceA.wait();
+                    // 获取resourceB共享资源的监视器锁
+                    synchronized (resourceB) {
+                        System.out.println("tA get resourceB lock");
+
+                        // 线程A阻塞 ，并择放获取到的 resourceA的锁
+                        System.out.println("tA release resourceA lock");
+                        resourceA.wait();
+                    }
                 }
-            } catch (InterruptedException e){
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         });
@@ -33,13 +34,13 @@ public class TestWaitFun {
         Thread tB = new Thread(() -> {
             try {
                 Thread.sleep(1000);
-                synchronized (resourceA){
+                synchronized (resourceA) {
                     System.out.println("tB get resourceA lock");
 
                     System.out.println("tB try to get resourceB lock...");
 
                     // 获取resourceB共享资源的监视器锁
-                    synchronized (resourceB){
+                    synchronized (resourceB) {
                         System.out.println("tB get resourceB lock");
 
                         // 线程A阻塞 ，并择放获取到的 resourceA的锁
@@ -48,7 +49,7 @@ public class TestWaitFun {
 
                     }
                 }
-            } catch (InterruptedException e){
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         });

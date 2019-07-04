@@ -1,5 +1,7 @@
 package com.stark.test;
 
+import com.google.common.base.MoreObjects;
+
 import java.math.BigDecimal;
 
 /**
@@ -10,26 +12,35 @@ public class Test {
 
     public static void main(String[] args) {
 
-        String s = "9.86";
-
-        Float f = Float.valueOf(s);
-
-        f = f * 100;
-        Long result = f.longValue();
-
-        System.out.println(result);
-
-
-        BigDecimal d1 = new BigDecimal(0.6);
-        BigDecimal d2 = new BigDecimal(0.4);
-        BigDecimal d3 = d1.divide(d2, 1, BigDecimal.ROUND_HALF_UP);
-        System.out.println(d3);
+//        String s = "9.86";
+//
+//        Float f = Float.valueOf(s);
+//
+//        f = f * 100;
+//        Long result = f.longValue();
+//
+//        System.out.println(result);
+//
+//
+//        BigDecimal d1 = new BigDecimal(0.6);
+//        BigDecimal d2 = new BigDecimal(0.4);
+//        BigDecimal d3 = d1.divide(d2, 1, BigDecimal.ROUND_HALF_UP);
+//        System.out.println(d3);
 
 //
 //        BigDecimal d1 = new BigDecimal("0.6");
 //        BigDecimal d2 = new BigDecimal("0.4");
 //        BigDecimal d3 = d1.divide(d2);
 //        System.out.println(d3);
+
+        Integer b = null;
+
+        Integer a = MoreObjects.firstNonNull(b, 0) + 1;
+
+
+
+
+
 
     }
 
